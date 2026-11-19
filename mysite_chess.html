@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chess Victory — шахматная онлайн-школа Татьяны Губернаторовой</title>
+  <meta name="description" content="Онлайн-школа шахмат Татьяны Губернаторовой: кандидат в мастера спорта, рейтинг ФИДЕ 1761/1838. Обучение детей с 9 лет и взрослых на русском и английском, онлайн и офлайн в Сочи.">
+  <meta property="og:title" content="Chess Victory — шахматная онлайн-школа">
+  <meta property="og:description" content="Научитесь играть и побеждать. Индивидуальные и групповые занятия шахматами онлайн и в Сочи.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="img/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= ШАПКА ================= -->
+<header class="header" id="header">
+  <div class="wrap header__inner">
+    <a class="logo" href="#hero">
+      <!-- КАРТИНКА: положите файл img/logo.svg (экспорт логотипа из Figma) -->
+      <img class="logo__img" src="img/logo.png" alt="">
+      <span class="logo__text">CHESS <em>VICTORY</em></span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#about">Обо мне</a>
+      <a href="#advantages">Преимущества</a>
+      <a href="#pricing">Прайс</a>
+      <a href="#contacts">Контакты</a>
+      <a href="#feedback" class="btn btn--teal nav__cta">Начать обучение</a>
+    </nav>
+
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <!-- ================= ГЛАВНАЯ (ПЕРВЫЙ ЭКРАН) ================= -->
+  <section class="hero" id="hero">
+    <!-- КАРТИНКА: положите файл img/hero.jpg (фон первого экрана: шахматы на яхте) -->
+    <img class="hero__bg" src="img/hero.jpg" alt="">
+    <div class="hero__shade" aria-hidden="true"></div>
+
+    <div class="wrap hero__content">
+      <div class="promo reveal">
+        <strong class="promo__title">Скидка 10%</strong>
+        <button class="promo__code" id="promoCode" type="button" title="Нажмите — промокод скопируется">промокод «слон»</button>
+        <a href="#feedback" class="btn btn--yellow">Забрать скидку</a>
+      </div>
+
+      <h1 class="reveal">Откройте для себя мир шахмат</h1>
+      <p class="hero__sub reveal">Учитесь с лучшими в нашей онлайн-школе — начните играть и побеждать уже сегодня!</p>
+      <a href="#feedback" class="btn btn--teal btn--big reveal">Начать обучение</a>
+    </div>
+
+    <a class="hero__scroll" href="#about" aria-label="Прокрутить к разделу «Обо мне»">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+    </a>
+  </section>
+
+  <!-- ================= ОБО МНЕ ================= -->
+  <section class="section" id="about">
+    <div class="wrap">
+      <span class="label">Знакомство</span>
+      <h2>Обо мне</h2>
+
+      <div class="about__grid">
+        <figure class="about__photo reveal">
+          <!-- КАРТИНКА: положите файл img/about.jpg (фото Татьяны за шахматной доской) -->
+          <img src="img/about.jpg" alt="Татьяна Губернаторова — тренер по шахматам">
+        </figure>
+
+        <div class="about__text reveal">
+          <p><strong>Всем доброго дня! Меня зовут Татьяна Губернаторова.</strong> Рада приветствовать вас на сайте, посвящённом обучению шахматам.</p>
+          <p>Играю в шахматы с 12 лет и являюсь кандидатом в мастера спорта. Занимаюсь обучением детей с 9 лет и взрослых, желающих научиться играть либо повысить свой уровень.</p>
+          <p>Преподавание ведётся на русском и английском языках, онлайн и офлайн в городе Сочи. Оставьте заявку — мой куратор свяжется с вами в течение 24 часов.</p>
+
+          <ul class="badges">
+            <li>Кандидат в мастера спорта</li>
+            <li>ФИДЕ блиц: 1838</li>
+            <li>ФИДЕ быстрые: 1761</li>
+            <li>Русский / английский</li>
+            <li>Онлайн / Сочи</li>
+          </ul>
+
+          <div class="about__contacts">
+            <a class="chip" href="tel:+79673239725">+7 (967) 323-97-25</a>
+            <a class="chip" href="mailto:TatiGubernatorova@yandex.ru">TatiGubernatorova@yandex.ru</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ПРЕИМУЩЕСТВА ================= -->
+  <section class="section" id="advantages">
+    <div class="wrap">
+      <span class="label">Почему онлайн-школа</span>
+      <h2>Преимущества</h2>
+
+      <p class="advantages__lead reveal">Учитесь в удобном ритме — без потери качества знаний. Обучение в нашей онлайн-школе даёт свободу, которой не хватает в традиционном формате.</p>
+
+      <div class="advantages__grid">
+        <article class="card card--lilac reveal">
+          <span class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></svg></span>
+          <h3>Гибкий график</h3>
+          <p>Вы сами выбираете, когда заниматься: можно учиться после работы, в выходные или в то время суток, когда мозг максимально продуктивен.</p>
+        </article>
+
+        <article class="card card--beige reveal">
+          <span class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 4 5.6 4 9s-1.4 6.4-4 9c-2.6-2.6-4-5.6-4-9s1.4-6.4 4-9z"/></svg></span>
+          <h3>Доступ из любой точки</h3>
+          <p>Нужен только интернет: учитесь дома, в путешествии или в кафе — программа и материалы всегда под рукой.</p>
+        </article>
+
+        <article class="card card--pink reveal">
+          <span class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8h9M19 8h1M4 16h3M13 16h7"/><circle cx="16" cy="8" r="2.4"/><circle cx="10" cy="16" r="2.4"/></svg></span>
+          <h3>Индивидуальный темп</h3>
+          <p>Одни темы можно пройти быстрее, другие — изучить детальнее. Такой подход помогает глубже усвоить материал.</p>
+        </article>
+
+        <article class="card card--mint reveal">
+          <span class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v10H10l-6 4V5z"/><path d="M8 9h8M8 12h5"/></svg></span>
+          <h3>Оперативная обратная связь</h3>
+          <p>Преподаватели проверяют задания и дают комментарии, а кураторы помогают не сбиться с пути и сохранять мотивацию.</p>
+        </article>
+
+        <article class="card card--green reveal">
+          <span class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M10 8.5l6 3.5-6 3.5v-7z"/></svg></span>
+          <h3>Современные форматы</h3>
+          <p>Видеоуроки, интерактивные тренажёры, тесты и практические задания делают обучение живым и понятным.</p>
+        </article>
+
+        <article class="card card--peach reveal">
+          <span class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-7 8 7v9h-5.5v-6h-5v6H4v-9z"/></svg></span>
+          <h3>Комфортная среда</h3>
+          <p>Занимайтесь в привычной обстановке, без лишнего стресса и отвлекающих факторов.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ПРАЙС ================= -->
+  <section class="section" id="pricing">
+    <div class="wrap">
+      <span class="label">Тарифы</span>
+      <h2>Стоимость обучения</h2>
+
+      <div class="table-wrap reveal">
+        <table>
+          <caption class="visually-hidden">Цены на индивидуальные и групповые занятия шахматами</caption>
+          <thead>
+            <tr>
+              <th scope="col">Количество занятий в абонементе</th>
+              <th scope="col">Индивидуальные занятия<br>45 минут</th>
+              <th scope="col">Индивидуальные занятия<br>60 минут</th>
+              <th scope="col">Групповое занятие<br>60 минут</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">8 занятий</th>
+              <td>900 ₽/урок</td>
+              <td>1000 ₽/урок</td>
+              <td>500 ₽/урок</td>
+            </tr>
+            <tr>
+              <th scope="row">16 занятий</th>
+              <td>950 ₽/урок</td>
+              <td>900 ₽/урок</td>
+              <td>500 ₽/урок</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="pricing__foot reveal">
+        <p>Не знаете, какой формат подойдёт? Оставьте заявку — помогу подобрать программу под ваш уровень и цели.</p>
+        <a href="#feedback" class="btn btn--teal">Подобрать программу</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ФОРМА ОБРАТНОЙ СВЯЗИ ================= -->
+  <section class="section" id="feedback">
+    <div class="wrap">
+      <!-- СЮДА ПОДКЛЮЧИТЕ ОТПРАВКУ: action="..." вашего бэкенда или сервиса (Formspree, Telegram-бот) -->
+      <form class="form reveal" id="leadForm">
+        <h2>Форма обратной связи</h2>
+        <p class="form__sub">Оставьте заявку — мой куратор свяжется с вами в течение 24 часов.</p>
+
+        <div class="form__grid">
+          <div class="field">
+            <label for="name">Ваше имя <span class="req">*</span></label>
+            <input id="name" name="name" type="text" required placeholder="Как к вам обращаться?">
+          </div>
+          <div class="field">
+            <label for="phone">Ваш контактный телефон <span class="req">*</span></label>
+            <input id="phone" name="phone" type="tel" required placeholder="+7 (___) ___-__-__">
+          </div>
+          <div class="field">
+            <label for="email">Ваш e-mail <span class="opt">(при наличии)</span></label>
+            <input id="email" name="email" type="email" placeholder="you@yandex.ru">
+          </div>
+          <div class="field">
+            <label for="city">Ваш город</label>
+            <input id="city" name="city" type="text" placeholder="Сочи">
+          </div>
+        </div>
+
+        <label class="consent">
+          <input type="checkbox" id="consent" required>
+          <span>Я даю согласие на обработку персональных данных в соответствии с ФЗ-152 «О персональных данных» и принимаю <button type="button" class="link" id="policyLink">политику конфиденциальности</button> <span class="req">*</span></span>
+        </label>
+
+        <button class="btn btn--teal btn--big" type="submit">Начать обучение</button>
+        <p class="form__ok" id="formOk" role="status" hidden>Заявка отправлена! Свяжемся с вами в течение 24 часов ♟</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ================= КОНТАКТЫ ================= -->
+  <section class="section" id="contacts">
+    <div class="wrap">
+      <div class="contacts__card reveal">
+        <div class="contacts__info">
+          <!-- КАРТИНКА: тот же файл img/logo.svg -->
+          <img class="contacts__logo" src="img/logo.png" alt="Логотип Chess Victory">
+          <p class="contacts__name">CHESS VICTORY</p>
+          <p class="contacts__tag">шахматная онлайн-школа</p>
+
+          <a class="contacts__line" href="tel:+79673239725">+7 (967) 323-97-25</a>
+          <a class="contacts__line" href="mailto:TatiGubernatorova@yandex.ru">TatiGubernatorova@yandex.ru</a>
+
+          <div class="messengers">
+            <!-- ЗАМЕНИТЕ ссылки на ваши реальные профили -->
+            <a class="ms ms--vk" href="https://vk.com/" target="_blank" rel="noopener" aria-label="Написать в VK">VK</a>
+            <a class="ms ms--wa" href="https://wa.me/79673239725" target="_blank" rel="noopener" aria-label="Написать в WhatsApp">
+              <svg viewBox="0 0 24 24" width="24" height="24"><path fill="#fff" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.5-.3-3 .8.8-2.9-.3-.5A8.2 8.2 0 1 1 12 20.2Zm4.6-6c-.3-.1-1.6-.8-1.9-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4 0-.5.1-.7l.5-.6c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.8-2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.9.9-1.1 2.2-.3 3.7a11 11 0 0 0 4.6 4.6c1.6.8 2.8.9 3.7.5.6-.3 1.3-1 1.4-1.6.1-.5.1-.9 0-1-.1-.1-.3-.2-.6-.3Z"/></svg>
+            </a>
+            <a class="ms ms--tg" href="https://t.me/username" target="_blank" rel="noopener" aria-label="Написать в Telegram">
+              <svg viewBox="0 0 24 24" width="24" height="24"><path fill="#fff" d="M21.9 4.6c.2-1-.7-1.6-1.6-1.2L2.8 10.2c-1 .4-1 1.8.1 2.1l4.4 1.4 1.7 5.1c.3.9 1.4 1.1 2 .4l2.3-2.4 4.3 3.2c.8.6 1.9.1 2.1-.9l2.2-14.5ZM8.3 13.4l9.3-5.8c.4-.3.8.1.5.4l-7.6 7-.3 3.2-1.9-4.8Z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="contacts__heart">
+          <!-- КАРТИНКА: положите файл img/heart.png (красное пушистое сердце) -->
+          <img src="img/heart.png" alt="С любовью к шахматам">
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ================= ФУТЕР ================= -->
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <p>© <span id="year"></span> Chess Victory · Татьяна Губернаторова</p>
+    <button class="footer__link" id="policyLink2" type="button">Политика обработки персональных данных</button>
+  </div>
+</footer>
+
+<!-- ================= ПОЛИТИКА (ФЗ-152) ================= -->
+<dialog class="policy" id="policyDialog">
+  <h3>Политика обработки персональных данных</h3>
+  <p>Оставляя заявку на сайте, вы предоставляете согласие на обработку персональных данных (имя, телефон, e-mail, город) в соответствии с Федеральным законом от 27.07.2006 № 152-ФЗ «О персональных данных».</p>
+  <p>Оператор: Губернаторова Татьяна, шахматная онлайн-школа «Chess Victory». Данные используются исключительно для связи с вами и подбора программы обучения, не передаются третьим лицам и хранятся до отзыва согласия.</p>
+  <p>Согласие можно отозвать в любой момент, направив письмо на TatiGubernatorova@yandex.ru.</p>
+  <button class="btn btn--teal" id="policyClose" type="button">Понятно</button>
+</dialog>
+
+<script>
+  // Липкая шапка
+  const header = document.getElementById('header');
+  addEventListener('scroll', () => header.classList.toggle('scrolled', scrollY > 10));
+
+  // Бургер-меню
+  const burger = document.getElementById('burger');
+  const nav = document.getElementById('nav');
+  burger.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open);
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    nav.classList.remove('open');
+    document.body.style.overflow = '';
+  }));
+
+  // Копирование промокода
+  const promo = document.getElementById('promoCode');
+  promo.addEventListener('click', async () => {
+    try { await navigator.clipboard.writeText('слон'); } catch (e) {}
+    promo.textContent = 'Скопировано!';
+    promo.classList.add('copied');
+    setTimeout(() => { promo.textContent = 'промокод «слон»'; promo.classList.remove('copied'); }, 2000);
+  });
+
+  // Появление блоков при скролле
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const reveals = document.querySelectorAll('.reveal');
+  if (reduced) reveals.forEach(el => el.classList.add('in'));
+  else {
+    const io = new IntersectionObserver(entries => entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    }), { threshold: 0.15 });
+    reveals.forEach(el => io.observe(el));
+  }
+
+  // Форма: проверка + сообщение об успехе
+  // ЗДЕСЬ подключите реальную отправку (fetch на ваш бэкенд / Formspree / Telegram-бот)
+  const form = document.getElementById('leadForm');
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    if (!form.checkValidity()) { form.reportValidity(); return; }
+    document.getElementById('formOk').hidden = false;
+    form.reset();
+  });
+
+  // Политика в модальном окне
+  const dialog = document.getElementById('policyDialog');
+  document.getElementById('policyLink').addEventListener('click', e => { e.preventDefault(); dialog.showModal(); });
+  document.getElementById('policyLink2').addEventListener('click', () => dialog.showModal());
+  document.getElementById('policyClose').addEventListener('click', () => dialog.close());
+  dialog.addEventListener('click', e => { if (e.target === dialog) dialog.close(); });
+
+  // Год в футере
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
